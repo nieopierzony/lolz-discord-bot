@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Привязка ФА к Discord - LolzTeam</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="loading visible">
+          <div class="loader"></div>
+          <h4>Идет загрузка...</h4>
+        </div>
+        <div class="success">
+          <div class="icon icon-success"></div>
+          <h2>Успешно!</h2>
+          <p>
+            Вы привязали форумный аккаунт <a href="%0" class="text--secondary">%1</a> к пользователю
+            <span class="text--secondary">%2</span>
+          </p>
+          <a class="btn" href="discord://discord.com/channels/485150374873792524/485428104383430668"
+            >Вернуться в Discord</a
+          >
+        </div>
+        <div class="error">
+          <div class="icon icon-error"></div>
+          <h2>Произошла ошибка!</h2>
+          <p>%0</p>
+          <a class="btn" href="%1">Обратно к авторизации</a>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
